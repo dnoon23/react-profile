@@ -1,10 +1,10 @@
 import React from "react";
-import social from "../../assets/social";
-import commerce from "../../assets/commerce";
-import tracker from "../../assets/tracker";
-import editor from "../../assets/editor";
-import note from "../../assets/note";
-import svg from "../../assets/svg";
+import social from "../assets/social.png";
+import commerce from "../assets/commerce.png";
+import tracker from "../assets/tracker.png";
+import editor from "../assets/editor.png";
+import note from "../assets/note.png";
+import svg from "../assets/svg.png";
 
 
 function Portfolio() {
@@ -14,7 +14,7 @@ function Portfolio() {
       <div>
       <div>
         <img src={social} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>NoSQL Social Network API</h4>
           <a
             href="https://github.com/dnoon23/NoSQL-Social-Network-API"
@@ -24,7 +24,7 @@ function Portfolio() {
       </div>
       <div>
         <img src={commerce} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>ORM E-Commerce Back-End</h4>
           <a
             href="https://github.com/dnoon23/ORM-E-Commerce-Back-End"
@@ -34,7 +34,7 @@ function Portfolio() {
       </div>
       <div>
         <img src={tracker} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>SQL Employee Tracker</h4>
           <a
             href="https://github.com/dnoon23/SQL-Employee-Tracker"
@@ -44,7 +44,7 @@ function Portfolio() {
       </div>
       <div>
         <img src={editor} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>PWA Text Editor</h4>
           <a
             href="https://github.com/dnoon23/PWA-text-editor"
@@ -56,7 +56,7 @@ function Portfolio() {
       </div>
       <div>
         <img src={note} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>Express.js Note Taker</h4>
           <a
             href="https://github.com/dnoon23/Express.js-Note-Taker"
@@ -68,7 +68,7 @@ function Portfolio() {
       </div>
       <div>
         <img src={svg} alt="Project Image" />
-        <div className={style["project-info"]}>
+        <div >
           <h4>SVG Logo Maker</h4>
           <a
             href="https://github.com/dnoon23/SVG-Logo-Maker"
