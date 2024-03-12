@@ -10,7 +10,7 @@ import '../output.css';
 
 function Portfolio() {
   return (
-    <>
+    <div className="bg-red-800">
       <h1 className="text-4xl font-bold text-center py-5">Portfolio</h1>
       <div>
       <div className="text-center">
@@ -82,7 +82,7 @@ function Portfolio() {
         </div>
       </div>
       </div>
-    </>
+    </div>
   )
 }
 
