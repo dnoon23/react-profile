@@ -8,7 +8,7 @@ This project was to create a portfolio using react. </p>
 
 ## Installation
 
-Deployed Website:
+Deployed Website: https://melodic-starlight-8269ed.netlify.app/
 
 To run the program either launch the deployed website or, if using the code, open the main directory in the terminal and type `npm install`.
 

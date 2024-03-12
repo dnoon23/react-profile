@@ -9,7 +9,7 @@ const Header = () => {
   return (
     <header>
       <Navbar className="flex h-12 items-center space-x-11 bg-gray-200 max-w-full text-center" >
-          <Nav className="mr-auto container flex flex-row">
+          <Nav className="mx-auto container flex flex-row">
             <Nav.Link as={Link} to={"/about"} className={currentPage === "/about" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}>About Me </Nav.Link>
             <Nav.Link as={Link} to={"/portfolio"} className={currentPage === "/portfolio" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}> Portfolio </Nav.Link>
             <Nav.Link as={Link} to={"/contact"} className={currentPage === "/contact" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}> Contact </Nav.Link>
