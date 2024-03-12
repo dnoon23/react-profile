@@ -1,34 +1,21 @@
-import React, { useState, useEffect } from 'react';
 import { Navbar, Nav } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
+import '../output.css';
 
 const Header = () => {
 
+  const currentPage = useLocation().pathname;
+
   return (
     <header>
-    <Navbar className="" >
-      <div className="">
-        <Nav className="mr-auto">
-          {/* Conditionally set the 'to' prop based on isAuthenticated */}
-          <Nav.Link as={Link} to={"/about"} className="text-white">
-          About Me
-          </Nav.Link>
-        </Nav>
-        <Nav>
-        <Nav.Link as={Link} to={"/portfolio"} className=""> Portfolio</Nav.Link>
-        </Nav>
-        <Nav.Link as={Link} to={"/contact"} className="text-white">
-          Contact
-          </Nav.Link>
-          <Nav className="mr-auto">
-          {/* Conditionally set the 'to' prop based on isAuthenticated */}
-          <Nav.Link as={Link} to={"/resume"} className="text-white">
-          Resume
-          </Nav.Link>
+      <Navbar className="flex h-12 items-center space-x-11 bg-gray-200 max-w-full text-center" >
+          <Nav className="mr-auto container flex flex-row">
+            <Nav.Link as={Link} to={"/about"} className={currentPage === "/about" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}>About Me </Nav.Link>
+            <Nav.Link as={Link} to={"/portfolio"} className={currentPage === "/portfolio" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}> Portfolio </Nav.Link>
+            <Nav.Link as={Link} to={"/contact"} className={currentPage === "/contact" ? "text-black basis-1/4 underline  " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}> Contact </Nav.Link>
+            <Nav.Link as={Link} to={"/resume"} className={currentPage === "/resume" ? "text-black basis-1/4 underline " : "text-black basis-1/4  hover:text-gray-300 hover:underline"}> Resume</Nav.Link>
           </Nav>
-        
-      </div>
-    </Navbar>
+      </Navbar>
     </header>
   );
 };

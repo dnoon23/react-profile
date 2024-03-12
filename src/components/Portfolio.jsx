@@ -5,74 +5,79 @@ import tracker from "../assets/tracker.png";
 import editor from "../assets/editor.png";
 import note from "../assets/note.png";
 import svg from "../assets/svg.png";
+import '../output.css';
 
 
 function Portfolio() {
   return (
     <>
-      <h1>Portfolio</h1>
+      <h1 className="text-4xl font-bold text-center py-5">Portfolio</h1>
       <div>
-      <div>
-        <img src={social} alt="Project Image" />
+      <div className="text-center">
+        <img src={social} alt="Project Image"  className="mx-auto h-auto max-w-lg" />
         <div >
           <h4>NoSQL Social Network API</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/NoSQL-Social-Network-API"
-          >
+          >Github
           </a>
         </div>
       </div>
-      <div>
-        <img src={commerce} alt="Project Image" />
+      <div className="text-center">
+        <img src={commerce} alt="Project Image"  className="mx-auto h-auto max-w-lg pt-5" />
         <div >
           <h4>ORM E-Commerce Back-End</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/ORM-E-Commerce-Back-End"
-          >
+          >Github
           </a>
         </div>
       </div>
-      <div>
-        <img src={tracker} alt="Project Image" />
+      <div className="text-center">
+        <img src={tracker} alt="Project Image"  className="mx-auto h-auto max-w-lg pt-5" />
         <div >
           <h4>SQL Employee Tracker</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/SQL-Employee-Tracker"
-          >
+          >Github
           </a>
         </div>
       </div>
-      <div>
-        <img src={editor} alt="Project Image" />
+      <div className="text-center">
+        <img src={editor} alt="Project Image"  className="mx-auto h-auto max-w-lg pt-5" />
         <div >
           <h4>PWA Text Editor</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/PWA-text-editor"
-          >
-          </a>
-          <a href="https://dnoon23-pwa-text-editor-ab67b5afd607.herokuapp.com/">
+          >Github
+          </a><br/>
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" 
+          href="https://dnoon23-pwa-text-editor-ab67b5afd607.herokuapp.com/"
+          >Deployment
           </a>
         </div>
       </div>
-      <div>
-        <img src={note} alt="Project Image" />
+      <div className="text-center">
+        <img src={note} alt="Project Image"  className="mx-auto h-auto max-w-lg pt-5" />
         <div >
           <h4>Express.js Note Taker</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/Express.js-Note-Taker"
-          >
-          </a>
-          <a href="https://dnoon23-note-taker-d95e855ca67c.herokuapp.com/">
+          >Github
+          </a><br/>
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600" 
+          href="https://dnoon23-note-taker-d95e855ca67c.herokuapp.com/"
+          >Deployment
           </a>
         </div>
       </div>
-      <div>
-        <img src={svg} alt="Project Image" />
-        <div >
+      <div className="text-center">
+        <img src={svg} alt="Project Image"  className="mx-auto h-auto max-w-lg pt-5" />
+        <div className="pb-5">
           <h4>SVG Logo Maker</h4>
-          <a
+          <a className="underline text-blue-600 hover:text-blue-800 visited:text-purple-600"
             href="https://github.com/dnoon23/SVG-Logo-Maker"
-          >
+          >Github
           </a>
         </div>
       </div>
