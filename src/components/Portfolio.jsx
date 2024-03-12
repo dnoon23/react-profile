@@ -7,7 +7,7 @@ import note from "../assets/note.png";
 import svg from "../assets/svg.png";
 import '../output.css';
 
-
+//Portfolio with pictures and links
 function Portfolio() {
   return (
     <div className="bg-red-800">

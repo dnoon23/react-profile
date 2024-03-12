@@ -5,7 +5,7 @@ import '../output.css';
 const Header = () => {
 
   const currentPage = useLocation().pathname;
-
+//Header with links that chages them depending on the page
   return (
     <header>
       <Navbar className="flex h-12 items-center space-x-11 bg-gray-200 max-w-full text-center" >

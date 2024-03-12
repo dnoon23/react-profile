@@ -2,6 +2,7 @@ import React from "react";
 import resume from "../assets/resume.pdf"
 import '../output.css';
 
+//Resume page with link
 function Resume() {
   return(
 <div className="h-screen bg-red-800">

@@ -2,7 +2,7 @@ import React from "react";
 import pic from "../assets/photo.jpg";
 import '../output.css';
 
-
+//About me with picture
 function About() {
   return(
 <div className="bg-red-800">

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../output.css';
 
+//State for the contact form
 function Contact() {
 
   const [formName, setFormName] = useState("");
@@ -27,6 +28,7 @@ function Contact() {
 
 
   return (
+    //E-mail link
     <div className="h-screen justify-center bg-red-800">
       <h1 className="text-4xl font-bold py-5 text-center">Contact</h1>
       <p className="text-center pb-5">
@@ -34,6 +36,7 @@ function Contact() {
       </p>
       <div className="col-md-6 text-center">
 
+      //Contact form
         <form onSubmit={handleSubmit} >
           <div>
             <div className="mb-5 mx-20">
